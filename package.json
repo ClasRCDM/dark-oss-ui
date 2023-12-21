@@ -1,0 +1,20 @@
+{
+  "name": "dark-oss-ui",
+  "theme": "ui",
+  "version": "1.0.0",
+  "description": "Clean and configurable UI Oss dark theme for Pulsar",
+
+  "keywords": [
+    "ui",
+    "theme",
+    "dark",
+    "minimal",
+    "clean"
+  ],
+
+  "repository": "https://github.com/pulsar-edit/dark-oss-ui",
+  "license": "MIT",
+  "engines": {
+    "pulsar": ">=1.111.0"
+  }
+}

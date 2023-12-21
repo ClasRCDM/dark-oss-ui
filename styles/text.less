@@ -1,0 +1,53 @@
+// Text
+.text-smaller {
+  font-size: smaller;
+}
+
+.text-subtle    { color: @text-color-subtle; }
+.text-highlight { color: @text-color-highlight; }
+
+.text-info    { color: @text-color-info; }
+.text-success { color: @text-color-success; }
+.text-warning { color: @text-color-warning; }
+.text-error   { color: @text-color-error; }
+
+// Highlights ---------------
+.highlight         { .highlight-mixin(@background-color-highlight); }
+.highlight-info    { .highlight-mixin(@background-color-info); }
+.highlight-warning { .highlight-mixin(@background-color-warning); }
+.highlight-error   { .highlight-mixin(@background-color-error); }
+.highlight-success { .highlight-mixin(@background-color-success); }
+
+.highlight-mixin(@color) {
+  font-weight: normal;
+
+  padding-left: @component-padding/2;
+  padding-right: @component-padding/2;
+
+  color: @base-background-color;
+  border-radius: @component-border-radius;
+  background-color: @color;
+}
+
+// Background Message ---------------
+.background-message {
+  font-weight: bold;
+  color: @text-color-subtle;
+}
+
+// Code
+pre {
+  .text(normal);
+  border-color: @base-border-color;
+  background: @base-background-color;
+  border: 0;
+}
+
+code {
+  padding: 2px 4px;
+  font-size: 0.9em;
+
+  color: @text-color-highlight;
+  background-color: @base-border-color;
+  border-radius: 4px;
+}

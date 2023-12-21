@@ -1,0 +1,61 @@
+// Tooltips
+.tooltip {
+  white-space: nowrap;
+
+  &.in {
+    opacity: 1;
+  }
+
+  .tooltip-inner {
+    .text(invert);
+    .shadow();
+
+    line-height: @component-line-height;
+    border-radius: @component-border-radius;
+    background-color: @ui-background-accent;
+
+    padding: .75em;
+    white-space: nowrap;
+    max-width: none;
+  }
+
+  .keystroke {
+    padding: .15em .4em;
+    margin: 0 -.3em 0 .25em;
+    border-radius: max(2px, @component-border-radius / 2);
+    color: @text-color-selected;
+    background: @background-color-selected;
+  }
+
+  &.top .tooltip-arrow {
+    border-top-color: @ui-background-accent;
+  }
+
+  &.top-left .tooltip-arrow {
+    border-top-color: @ui-background-accent;
+  }
+
+  &.top-right .tooltip-arrow {
+    border-top-color: @ui-background-accent;
+  }
+
+  &.right .tooltip-arrow {
+    border-right-color: @ui-background-accent;
+  }
+
+  &.left .tooltip-arrow {
+    border-left-color: @ui-background-accent;
+  }
+
+  &.bottom .tooltip-arrow {
+    border-bottom-color: @ui-background-accent;
+  }
+
+  &.bottom-left .tooltip-arrow {
+    border-bottom-color: @ui-background-accent;
+  }
+
+  &.bottom-right .tooltip-arrow {
+    border-bottom-color: @ui-background-accent;
+  }
+}

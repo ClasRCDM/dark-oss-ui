@@ -1,0 +1,32 @@
+// Base
+body {
+  font-weight: 500;
+  font-size: @font-size;
+
+  color: @text-color;
+  background-color: @app-background-color;
+}
+
+atom-pane {
+  border-right: 1px solid @base-border-color;
+  &:last-child {
+    border-right: none;
+  }
+}
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5,
+.h6 {
+ .text(heading);
+
+  small {
+    font-weight: 200;
+  }
+}
+
+h1, .h1 { font-size: 1.6em; }
+h2, .h2 { font-size: 1.5em; }
+h3, .h3 { font-size: 1.4em; }
+h4, .h4 { font-size: 1.3em; }
+h5, .h5 { font-size: 1.2em; }
+h6, .h6 { font-size: 1.1em; }

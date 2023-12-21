@@ -1,0 +1,46 @@
+// Panels
+.panel-heading {
+  .text(heading);
+
+  border-bottom: 1px solid @panel-heading-border-color;
+  background-color: @panel-heading-background-color;
+}
+
+.inset-panel {
+  background-color: @inset-panel-background-color;
+  .panel-heading {
+    background-color: lighten(@inset-panel-background-color, 4%);
+  }
+}
+
+// Modal -------------------
+atom-panel {
+  .modal {
+    border: 1px solid @overlay-border-color;
+
+    border-top: none;
+    box-shadow: 0 2px 8px 1px hsla(0, 0%, 0%, .3);
+  }
+
+  &.bottom {
+    border-top: 1px solid @tool-panel-border-color;
+    background: @base-background-color;
+  }
+}
+
+atom-pane-container {
+  background: linear-gradient(@app-background-color, @base-background-color);
+}
+
+atom-pane-container atom-pane-axis.horizontal > *:last-child {
+  border-right: none;
+}
+
+atom-pane-container atom-pane-axis.horizontal > * {
+  border-right: 1px solid @base-border-color;
+}
+
+atom-pane-container atom-pane-axis.vertical > atom-pane-resize-handle.vertical {
+  border-top: 1px solid @base-border-color;
+  margin-top: 0;
+}
